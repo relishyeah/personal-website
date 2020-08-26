@@ -1,2 +1,2 @@
 # personal-website
-Test edit
+Adapting a Django site for static hosting for personal projects, resume, etc.
