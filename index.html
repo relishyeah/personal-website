@@ -1,62 +1,74 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+  	<link rel="stylesheet" type="text/css"href="stylesheet.css">
+
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'schedule/main.css' %}">
+    <title>Quinn Relyea</title>
 
-		<title> Quinn Relyea </title>
+  </head>
+  <body>
 
-</head>
-<body>
+  	<div class="sidenav">
+  		<a href="#Home">Home</a>
+  		<a href="#Resume">Resume</a>
+  		<a href="#Projects">Projects</a>
+  		<a href="#Contact">Contact</a>
+  		<div class='row'>
+  			<div class = "col-1">
+  				<a href="#" class="fa fa-linkedin"></a>
+  			</div>
+  			<div class = "col-1">
+  				<a href="https://github.com/relishyeah" class="fa fa-github"></a>
+  			</div>
+  		
+		
+		</div>
+	</div>
+
+
+ 
+<div id="fullpage">
+  <section class="vertical-scrolling">
+    <h2>Quinn Relyea</h2>
   
-	<header class="site-header">
-	  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-	    <div class="container">
-	      <a class="navbar-brand mr-4" href="/">Quinn Relyea</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse" id="navbarToggle">
-	        <div class="navbar-nav mr-auto">
-	          <a class="nav-item nav-link" href="/get_class">Scheduler</a>
-	        </div>
-	        <!-- Navbar Right Side -->
-	        <div class="navbar-nav">
-	        	<a class="nav-item nav-link" href="">quinnrelyea@gmail.com </a>
-	        </div>
-	      </div>
-	    </div>
-	  </nav>
-	</header>
+  </section>
+  <section class="vertical-scrolling">
+    <h2>Resume</h2>
+    <h3>Coming Soon</h3>
+  </section>
+  <section class="vertical-scrolling">
+    <h2>Projects</h2>
+    <h3>Coming Soon</h3>
+  </section>
+  <section class="vertical-scrolling">
+    <h2>Contact</h2> 
+    <h3>Coming Soon </h3>
+  </section>
+
+</div>
+ 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+<script  src="function.js"></script>
 
 
 
-	<main role="main" class="container">
-  <div class="row">
-    <div >
-      <div>
-		<img style="height:275px;"  src="{% static 'schedule/me.jpg' %}"  >
-		<br/>
-		<img style="height:200px;"  src="{% static 'schedule/gottem.jpg' %}">
-      </div>
-      <br/>
-	<br/>
-	<br/>
-    </div>
-  </div>
-</main>
-	
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
-</body>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
-
-
-
-
-
