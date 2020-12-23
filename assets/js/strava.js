@@ -92,7 +92,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map4);
 
 for(var x=0; x<rides.length; x++){
-
+ 
     var coordinates = L.Polyline.fromEncoded(rides[x]).getLatLngs()
  
     L.polyline(
