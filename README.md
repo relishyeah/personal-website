@@ -1,2 +1,2 @@
 # personal-website
-Adapting a Django site for static hosting for personal projects, resume, etc.
+Code for my github pages site, hosted at quinnrelyea.com. Mainly used as a portfolio.
