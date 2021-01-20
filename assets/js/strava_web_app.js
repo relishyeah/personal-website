@@ -54,7 +54,7 @@ fetch(activities_link)
     var acts = count_activities(data);
     console.log(acts);
 
-   var colors = ['#FE3E39','#0582CA','#82031F', '#61210F', '#87B38D', '#E5C3D1', '#5B8117'];
+   var colors = ['#000000','#0000FF','#009900', '#61210F', '#87B38D', '#E5C3D1', '#5B8117'];
     // And for a doughnut chart
     var myDoughnutChart = new Chart(document.getElementById('activities'), {
         type: 'doughnut',
