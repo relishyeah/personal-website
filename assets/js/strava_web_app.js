@@ -13,11 +13,12 @@ function count_activities(data){
 function get_routes(data,acts){
     var ret = {};
     for(var x = 0;x<data.length;x++){
+        if (data[x]['map']['summary_polyline'] != null){
         if (data[x]['type'] in ret){
             ret[data[x]['type']].push(data[x]['map']['summary_polyline']);
         }   else{
             ret[data[x]['type']] = [data[x]['map']['summary_polyline']];
-        }
+        }}
     }
     return ret;
 }
