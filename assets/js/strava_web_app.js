@@ -20,7 +20,6 @@ function get_routes(data,acts){
             ret[data[x]['type']] = [data[x]['map']['summary_polyline']];
         }} else if(!(data[x]['type'] in ret)) {
             ret[data[x]['type']] = [];
-            console.log('test');
         }
     }
     return ret;
