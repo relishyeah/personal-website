@@ -29,12 +29,8 @@ function set_opacity(l){
     var len = l.length;
     if (len<5){
         return 1
-    } else if (len<10){
-        return .6
-    } else if(len<20){
-        return .35
     } else{
-        return .2
+        return .3
     }
 }
 
@@ -152,7 +148,7 @@ fetch(activities_link)
 
 
 
-   var colors = ['#000000','#0000FF','#009900', '#FF5733', '#7933FF', '#E5C3D1', '#5B8117','#F00000, #AF0088','#0F77a0'];
+   var colors = ['#FF5733','#0370F4','#009900', '#7933FF', '#B10909', '#E5C3D1', '#5B8117','#F00000, #AF0088','#0F77a0'];
     // And for a doughnut chart
     var myDoughnutChart = new Chart(document.getElementById('activities'), {
         type: 'doughnut',
