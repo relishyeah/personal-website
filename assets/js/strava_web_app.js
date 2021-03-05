@@ -76,10 +76,10 @@ function getYear(data){
         }   
     }
     var x = new Date().getMonth();
-
     for (var j = 0; j < Object.keys(ret).length;j++){
-        ret[Object.keys(ret)[j]] = ret[Object.keys(ret)[j]].slice(x+1).concat(ret[Object.keys(ret)[j]].slice(0,x-1));
+        ret[Object.keys(ret)[j]] = ret[Object.keys(ret)[j]].slice(x+1).concat(ret[Object.keys(ret)[j]].slice(0,x+1));
     }
+
     return ret;
 }
 
