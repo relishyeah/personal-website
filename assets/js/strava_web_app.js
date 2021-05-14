@@ -1,4 +1,5 @@
 function count_activities(data){
+    // Takes list of activities and counts by type
     var ret = {};
     for(var x = 0;x<data.length;x++){
         if (data[x]['type'] in ret){
@@ -11,6 +12,7 @@ function count_activities(data){
 }
 
 function get_routes(data,acts){
+    // Collects routes for all activity types
     var ret = {};
     for(var x = 0;x<data.length;x++){
         if (data[x]['map']['summary_polyline'] != null){
@@ -26,6 +28,8 @@ function get_routes(data,acts){
 }
 
 function set_opacity(l){
+    // Hardcoded values to check if there are enough routes over a point to
+    // make opaque. Activities without many events are opaque
     var len = l.length;
     if (len<5){
         return 1
@@ -34,6 +38,7 @@ function set_opacity(l){
     }
 }
 
+//Conversion to Imperial Units, seconds to hours
 function mtm(meters){
    return Math.floor(meters/1609);
 }
@@ -44,7 +49,9 @@ function mtf(meters){
 function sth(seconds){
     return Math.floor(seconds / 3600);
 }
+
 function getMonths(){
+    // Sorts year depending on the current month
     var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
     var x = new Date().getMonth();
     return month.slice(x+1).concat(month.slice(0,x+1))
@@ -55,15 +62,16 @@ function getMonth(piece){
     return (parseInt(piece['start_date'].slice(5,7),10) -1)
 }
 function oneYear(date,today){
+    //Checks to make sure all activities on graph are from last calender year
     date = new Date(date);
     return (today - date) < 31556952000 ;
 }
 
 function getYear(data){
+    //Uses helper functions to get all type/month combos from the last year
     var ret = {};
     var date = new Date();
-    var new_month = new Date(date.getFullYear(), date.getMonth(), 1);
-
+    var new_month = new Date(date.getFullYear(), date.getMonth()+1, 1);
     for(var x = 0;x<data.length;x++){
         
         if(oneYear(data[x]['start_date'], new_month)){
@@ -84,7 +92,7 @@ function getYear(data){
 }
 
 function makeChart(data, colors){
-    
+    // Use Chart.js to construct histogram
     var working = getYear(data);
     var ret = []
     for (var i = 0;i<Object.keys(working).length;i++){
