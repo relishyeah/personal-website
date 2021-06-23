@@ -1,7 +1,7 @@
 function count_activities(data){
     // Takes list of activities and counts by type
-    var ret = {};
-    for(var x = 0;x<data.length;x++){
+    let ret = {};
+    for(let x = 0;x<data.length;x++){
         if (data[x]['type'] in ret){
             ret[data[x]['type']] += 1;
         }   else{
